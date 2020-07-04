@@ -2,12 +2,13 @@ const express = require("express")
 
 const routes = express.Router()
 
-routes.get("/instructors", function(req, res) {
-    return res.render("instructors/index")
+
+routes.get("/Teachers", function(req, res) {
+    return res.render("Teachers/index")
 })
 
-routes.get("/members", function(req, res) {
-    return res.send("OKEI =P ")
+routes.get("/Students", function(req, res) {
+    return res.send("Routes from Students here! ")
 })
 
 
