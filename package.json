@@ -1,5 +1,5 @@
 {
-  "name": "gym_manager",
+  "name": "galileu",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,9 +15,9 @@
   "author": "Deeeeee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dawi-Formidavel/GymManager.git/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Dawi-Formidavel/GymManager.git#readme",
+  "homepage": "https://github.com/Dawi-Formidavel/Galileu",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "nodemon": "^2.0.4",
