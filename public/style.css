@@ -9,6 +9,7 @@
 
 :root {
     --color-rocket: #7159c1;
+    --colo-blue: #005bea;
 }
 
 body {
@@ -26,6 +27,9 @@ header {
 
 .links {
     font-size: 32px;
+    font-size: 40px;
+    line-height: 24px;
+    
 }
 
 .links a + a{
@@ -68,7 +72,7 @@ header {
 .card {
     background-color: white;
     width: 800px;
-    height: 400px;
+    height: 600px;
     margin: 45px auto;
     /* Grid dividimos ao meio */
     display: grid;
@@ -89,3 +93,51 @@ header {
         opacity: 1;
     }
 }
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(5, 7, 5, 0.1);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+
+.details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+    color: black;
+    font-size: 18px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--colo-blue);
+    text-align: center;
+}
+
+.details .item span {
+    padding: 8px 16px;
+    background-color: var(--colo-blue);
+    border-radius: 16px;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
