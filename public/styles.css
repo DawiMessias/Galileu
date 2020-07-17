@@ -95,7 +95,7 @@ header {
 }
 
 .details {
-    padding: 32px;
+    padding: 10px;
 }
 
 .details .item {
@@ -147,6 +147,7 @@ input {
     color: var(--color-blue);
 }
 
+select[name="select"],
 input[type="radio"] {
     width: initial;
     margin-right: 4px;
@@ -162,7 +163,7 @@ button[type="submit"] {
     background-color: var(--color-blue);
     color: white;
     border-radius: 4px;
-    margin-top: 22px;
+    margin-top: 12px;
     width: 100%;
     font-size: 16px;
     cursor: pointer;
