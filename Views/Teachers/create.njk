@@ -1,93 +1,81 @@
 {% extends "layout.njk" %}
 
-{% block content %}
+{% block content%}
 
 <form class="card" method="POST" action="/teachers">
     <section class="avatar" style="background: url(https://source.unsplash.com/collection/332741/700x600) no-repeat"></section>
     <section class="details">
+
         <h3>Novo Professor</h3>
-        <div class="item">
-            <div>Nome</div>
-            <div>
-                <input
-                type="text"
-                name="name"
-                placeholder="Nome">
-            </div>
-        </div>
 
         <div class="item">
-            <div>foto-perfil</div>
+            <div>Avatar URL</div>
             <div>
-                <input
+                <input 
                 type="url"
                 name="avatar_url"
                 placeholder="http://">
             </div>
         </div>
 
+
         <div class="item">
-            <div>Tempo de Experiência</div>
+            <div>Nome Completo</div>
+            <div>
+                <input 
+                type="text"
+                name="name"
+                placeholder="Nome do Instrutor"
+                checked>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Data de Nascimento</div>
             <div>
                 <input
-                type="text"
-                name="experiencia"
-                placeholder="Tempo de Estudo">
+                 type="date"
+                 name="birth">
             </div>
         </div>
 
         <div class="item">
-            <div>Genêro</div>
+            <div>Grau de Escolaridade</div>
             <div>
-                <span><input type="radio"
-                name="gender"
-                value="M" checked>Masculino</span>
-
-                <span><input type="radio"
-                name="gender"
-                value="F" checked>Feminino</span>
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Escolaridade</div>
-            <div>
-                <select name="select">
-                    <option value="valor">Ensino Médio Completo</option>
-                    <option value="valor">Ensino Superior Completo</option>
-                    <option value="valor">Mestrado</option>
-                    <option value="valor">Doutorado</option>
+                <select name="Escolaridade">
+                    <option value="EM" selected>Ensino Médio Completo</option>
+                    <option value="ES">Ensino Superior Completo</option>
+                    <option value="M">Mestrado</option>
+                    <option value="D">Doutorado</option>
                 </select>
             </div>
         </div>
 
-         <div class="item">
-            <div>Especialidade</div>
+        <div class="item">
+            <div>Tipo de aula</div>
             <div>
-                <input type="text"
-                name="services"
-                input="Aula"
-                placeholder="Tecnologia Curso" 
+                <span><input type="radio"
+                 name="Aula"
+                 value="P">Presencial</span>
+
+                 <span><input type="radio"
+                 name="Aula"
+                 value="A">À Distancia</span>
+                
             </div>
         </div>
 
-         <div class="item">
-            <div>Tipo de Aula</div>
+        <div>Acompanhamento</div>
             <div>
-                <span><input type="radio"
-                name="modalidade"
-                value="M" checked>EAD</span>
-
-                <span><input type="radio"
-                name="modalidade"
-                value="F" checked>Presencial</span>
+                <input 
+                type="tipo_aula"
+                name="Acompanhamento"
+                placeholder="ex.: Matemática e Física">
             </div>
-        </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Salvar</button>
 
     </section>
-
 </form>
 
 {% endblock %}
